@@ -17,5 +17,8 @@ console.log(`${number1} ${number2} ${number3} ${number4} ${number5}`);
 
 //2 other way, but it only works if the number is a string
 let myNumber = '12345';
-let splitNum = myNumber.split('');
-console.log(splitNum);//we get an array of each individual number, but numbers are strings;
+let splitNum = myNumber.split('').join(' ');
+console.log(splitNum);
+
+//Я думаю, что можно еще сделать цикл, но я честно признаюсь без
+// помощи гугла сама не сделаю, а списывать не буду принципиально
