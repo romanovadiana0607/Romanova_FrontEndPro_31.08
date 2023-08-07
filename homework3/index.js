@@ -16,7 +16,7 @@ const number5 = 5;
 console.log(`${number1} ${number2} ${number3} ${number4} ${number5}`);
 
 //2 other way, but it only works if the number is a string
-let myNumber = '12345';
+let myNumber = prompt('Your number');
 let splitNum = myNumber.split('').join(' ');
 console.log(splitNum);
 
