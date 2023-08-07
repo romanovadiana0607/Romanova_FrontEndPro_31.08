@@ -42,9 +42,12 @@ function getResult(yourAction,a ,b){
     }
 }
 
-function ifPressCancel(num){
+function ifPressCancelOrOK(num){
     const input = firstNum && secondNum;
     if(input === null){
+        return "*Please enter yor number*"
+    }
+    if(input === ''){
         return "*Please enter yor number*"
     }
     else{
@@ -52,10 +55,11 @@ function ifPressCancel(num){
     }
 }
 
-alert(`${ifPressCancel(firstNum)} ${chooseYourAction(yourAction)} ${ifPressCancel(secondNum)} = ${getResult(yourAction,firstNum,secondNum)}`)
+alert(`${ifPressCancelOrOK(firstNum)} ${chooseYourAction(yourAction)} ${ifPressCancelOrOK(secondNum)} = ${getResult(yourAction,firstNum,secondNum)}`)
 
 // This is the only way to complete the task that I could come up with
 
-/*I also added an "ifPressCancel" function because on my last homework
-* you asked me to try my program if the user presses cancel, so I applied it here
+/*I also added an "ifPressCancelOrOK" function because on my last homework
+* you asked me to try my program if the user presses cancel or doesnt enter
+* a number and presses OK, so I applied it here
  */
