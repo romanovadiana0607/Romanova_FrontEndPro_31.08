@@ -25,7 +25,7 @@ for(let i = 1; i <= 100; i++){
 }
 
 //4
-let num = 20;
+let num = 9;
 function isPrime(num){
 if(num <= 1){
     return false;
@@ -34,18 +34,14 @@ if(num <= 1){
 for(let i = 2;i < num; i++){
     if(num % i === 0){
         return `${num} is not a prime number`
-    }else{
-       return(`${num} is a prime number`)
     }
 }
-
+return `${num} is a prime number`
 }
 console.log(isPrime(num))
 
 //5
 let randomNum = 10;
-let stopLoop = 200;
-let isTrue;
 function powerOfThree(num) {
     if (num < 3) {
         return 'Can not be made by power of three'
